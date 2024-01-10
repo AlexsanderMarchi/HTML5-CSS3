@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="process.php">
+        <div>
+            <label for="name">Name</label>
+            <!-- if the input id is the same label for content, when you click the label on website, 
+                it'll go to the input -->
+            <input type="text" id="name" name="name" value="Dave Jones">
+        </div>
+        <div>
+            <label for="email">email</label>
+            <!-- input:email -->
+            <input type="email" name="email" id="email" placeholder="Enter your email">
+        </div>
+        <div>
+            <label for="message">message</label><br>
+            <textarea name="message" id="message" cols="50" rows="5"></textarea>
+        </div>
+        <div>
+            <label for="sex">Sex</label><br>
+            <select name="sex" id="sex">
+                <option value="male">male</option>
+                <option value="female" selected>female</option>
+                <option value="other">other</option>
+            </select>
+        </div>
+        <div>
+            <label for="age">age</label><br>
+            <input type="number" name="age" id="age">
+        </div>
+        <div>
+            <label for="bithdate">bithdate</label><br>
+            <input type="date" name="bithdate" id="bithdate">
+        </div>
+        <br>
+        <div>
+            <label for="membership">membership</label><br>
+            <input type="radio" name="membership" value="simple" id="membership"> simple
+            <input type="radio" name="membership" value="standart" id="membership" checked> standart
+            <input type="radio" name="membership" value="super" id="membership"> super
+        </div>
+        <br>
+        <div>
+            <label for="membership">I like...</label><br>
+            <input type="checkbox" name="likes" value="simple" id="likes"> rock
+            <input type="checkbox" name="likes" value="standart" id="likes" > pop
+            <input type="checkbox" name="likes" value="super" id="likes"> kpop
+        </div>
+
+        <input type="submit" value="submit">
+        <!-- <button type="submit">submit</button> -->
+
+        <button type="reset">reset</button>
+    </form>
+</body>
+</html>

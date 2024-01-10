@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links and images</title>
+</head>
+<body>
+    <!-- External links -->
+    <p>
+        <a href="http://google.com">google</a> 
+        <!--alt+shift+down to copy the line and paste in the next line. To move the line is alt+arrows-->
+    </p>
+    <!--ctrl+arrows to jump words and home or end button to go the whole line-->
+    <p>
+        <a href="http://google.com" target="_blank">google on new tab</a>
+    </p> 
+
+    <!-- Internal links -->
+    <p>
+        <a href="/HTMLSandbox/04_typography.html"> Typography</a>
+    </p>
+
+    <!-- Local image -->
+    <img src="/HTMLSandbox/images/plane.jpeg" alt="my page" width="200px">
+
+    <!-- Remote image from source.unsplash -->
+    <img src="https://source.unsplash.com/random/500x500" alt="image 2">
+</body>
+</html>
+
+
+
+<!-- 
+    When getting a random image, it can be either chosen from Unsplash's photos featured photos:
+
+https://source.unsplash.com/random
+
+Or, you can select that image from just the featured photos:
+
+https://source.unsplash.com/featured
+
+Optionally, to specify a size, place it at the end of the URL:
+
+https://source.unsplash.com/random/1600x900 https://source.unsplash.com/all/1600x900
+
+Random from a given user
+To choose a random photo from a specific user, the format follows that of selecting from a category:
+
+https://source.unsplash.com/user/{USERNAME}/
+
+Optionally, to specify a size, place it at the end of the path:
+
+https://source.unsplash.com/user/scottwebb/1600x900 https://source.unsplash.com/user/scottwebb/featured/1600x900
+
+Random from a user's likes
+You can also choose a random photo from a user's liked photos:
+
+https://source.unsplash.com/user/{USERNAME}/likes
+
+Optionally, to specify a size, place it at the end of the path:
+
+https://source.unsplash.com/user/aaron/likes/1600x900
+
+Narrowing random selection further with search terms
+Using any of the above formats - random from all or featured photos, filtering by collection or by user - you can narrow the selection of a random photo even further by supplying a list of comma-separated search terms on the end of the URL.
+
+For example, to get a random featured photo that matches the terms "apple" and "desk":
+
+https://source.unsplash.com/random?apple,desk
+
+Optionally, to specify a size, place it at the end of the path:
+
+https://source.unsplash.com/1600x900?apple,desk https://source.unsplash.com/featured/1600x900?apple,desk
+
+Photo of the Day or Week
+All of the above URL's will give you a new image each time they are requested (provided there are enough photos to choose from given the filtering). However each can also be limited to only updating once per day or week. To do so, simply add /daily or /weekly.
+
+For example:
+
+https://source.unsplash.com/daily
+
+https://source.unsplash.com/user/scottwebb/featured/1600x900/daily
+
+https://source.unsplash.com/1600x900/weekly?apple,desk
+ -->
