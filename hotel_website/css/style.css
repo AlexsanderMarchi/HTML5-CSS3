@@ -1,0 +1,15 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo {
+    text-decoration: none;
+}
