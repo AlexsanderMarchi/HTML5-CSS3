@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Em & Rem Units</title>
+    <style>
+        .box-1{
+            font: 20px;
+        }
+        .box-1 p{
+            /* The em search for the parent font-size. We define the font 
+            20px, so 1.5em is 20px plus 10px, because its like a multiplayer of the parent
+            font-size. If we don't define the font, It will look the font in 
+            the html root, that is 16px */
+           font-size: 1.5em;
+           padding: 1em;  /* It will be 30px, cause we define in the p font-size 1.5em */
+        }
+
+        html{
+            font-size: 10px;
+            font-size: 62.5%;  /*10px*/
+        }
+        /* It will always look for the root html unless we chance the HTML font*/
+        .box-2{
+            font-size: 2rem;
+        }
+
+        .box-2 p{
+            font-size: 1.6rem;
+            line-height: 1.7rem;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- Using em -->
+    <div class="box-1">
+        <h3>Box One</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptas dolor laudantium, ipsam quae aliquid
+            tenetur est ex unde nostrum voluptatibus consequatur libero eum harum dolores hic veniam impedit eos
+            officiis quaerat quibusdam fuga alias. Minima ipsam fugit perferendis aperiam.</p>
+        <ul>
+            <!-- li{$}*4 to make 4 li incremeting 1 -->
+            <li>1</li>
+            <li>2</li>
+            <li>3
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li> 
+                </ul>
+            </li>
+            <li>4</li>
+        </ul>
+    </div>
+    <!-- Using rem -->
+    <div class="box-2">
+        <h3>Box Two</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptas dolor laudantium, ipsam quae aliquid
+            tenetur est ex unde nostrum voluptatibus consequatur libero eum harum dolores hic veniam impedit eos
+            officiis quaerat quibusdam fuga alias. Minima ipsam fugit perferendis aperiam.</p>
+    </div>
+</body>
+
+</html>
