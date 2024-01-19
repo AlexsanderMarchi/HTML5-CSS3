@@ -70,6 +70,10 @@
     flex: 1;
 }
 
+.flex-reverse .row{
+    flex-direction: row-reverse;
+}
+
 .flex-columns .column .column-1,
 .flex-columns .column .column-2{
     height: 100%;
