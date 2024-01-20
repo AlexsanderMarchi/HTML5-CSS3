@@ -66,6 +66,22 @@
         </div>
         <p>Copyright &copy; 2020 EdgeLedge</p>
     </footer>
+
+    <script>
+        const navbar = document.getElementsByClassName('navbar');
+        let scrolled = false;
+
+        window.onscroll = function() {
+            if(window.pageYOffset > 100){
+                navbar.classList.remove('top');
+                if(!scrolled){
+                    navbar.style.transform = 'translateY(-70px)';
+                }
+            }else{
+                navbar.classList.add('top')
+            }
+        }
+    </script>
 </body>
 
 </html>
