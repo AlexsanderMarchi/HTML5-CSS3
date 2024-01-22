@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,7 +7,7 @@
 }
 
 body{
-    height: 4000px
+    font-family: 'Open Sans', sans-serif;
 }
 
 li{
@@ -27,17 +29,26 @@ a{
     height: 10vh;
     width: 100%;
     position: fixed;
+    opacity: 0.8;
     top: 0px;
     padding: 0 30px;
     z-index: 11;
 }
 
-.navbar h1{
-    padding: 10px;
+.navbar a{
+    font-size: 20px;
+    padding: 0 15px;
 }
 
-.navbar i{
-    color: #fff;
+.navbar li:hover{
+    color: #ae66f1;
+    border-bottom: #ae66f1 1px solid;
+    cursor: pointer;
+}
+
+.navbar h1{
+    padding: 10px;
+    font-size: 35px;
 }
 
 .navbar ul{
@@ -70,4 +81,57 @@ a{
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.6);
+}
+
+/* info */
+#info{
+    height: 20vh;
+    padding: 150px 0;
+}
+
+.info-content i {
+    color: #fff;
+    background: #ae66f1;;
+    padding: 20px;
+    border-radius: 100%;
+}
+
+.info-content h2{
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.info-content{
+    text-align: center;
+}
+
+/* Galery */
+
+#galery{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+}
+
+#galery img{
+    object-fit: cover;
+    width: 25%;
+    height: 30vh;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#galery img:hover{
+    opacity: 0.7;
+}
+
+#galery h2{
+    padding: 30px 0;
+    font-size: 40px;
+}
+
+#galery p{
+    margin-bottom: 40px;
 }
