@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes</title>
+    <style>
+        body{
+            background: #333;
+        }
+        .box{
+            background: white;
+            width: 200px;
+            height: 200px;
+            position: relative;
+            /* animation-name: animated1;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;  It will stay in 600px  
+            animation-delay: 2s;
+            animation-direction: alternate-reverse;
+            animation-timing-function: ease-in;  Start slow and go fast in the end   */
+            animation: animated1 5s forwards 2s ease-in-out; 
+        }
+
+        @keyframes animated1{
+            /* from{
+                width: 200px;
+            } */
+            from{
+                top:0;
+            }
+            to{
+                width: 600px;
+                background-color: red;
+                top:300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
