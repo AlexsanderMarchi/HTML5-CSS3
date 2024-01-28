@@ -51,7 +51,7 @@ body {
 
 #page-1 h1 {
     transform: translateY(-1200px);
-    animation: animatedh1 var(--animation-speed) forwards ease-in;
+    animation: animatedh1 var(--animation-speed) forwards ease-out;
 }
 
 @keyframes animatedh1 {
@@ -73,7 +73,7 @@ body {
 }
 
 #page-1 p {
-    transform: translateX(-1200px);
+    transform: translateX(-1500px);
     animation: animatedp var(--animation-speed) 1s forwards ease-in;
 }
 
